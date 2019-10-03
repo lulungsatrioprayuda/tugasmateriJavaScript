@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Belajar JS di jti.studdent</title>
+    <!--kita menggunakan chrome untuk tool developernya-->
+    <!--Untuk java scrip untuk menambahkan efek javascript itu menggunakan syntax atau tag "script" dan 
+    dan di dalam tag javascriptnya di isi "type="text/javascript"-->
+    <script type="text/javascript">
+    alert("hellow bitch");
+    /*menambahkan fungsi pada tombol yang memiliki nama unik atau id yang bernama "tambah_semangat"*/
+        function tambah_semangat()
+        {
+            var a=document.getElementById("div_semangat");
+            a.innerHTML+="<p> Sedang belajar Js Lung Semangat....!!</p>";
+        }
+    </script>
+</head>
+<body>
+    <h1> Belajar Javascript</h1>
+    <p>Saya sedang belajar java script</p>
+    Klik tombol ini untuk menambahkan kalimat baru :
+    <button id="tambah" onclick="tambah_semangat()">
+    Semangat...!!!
+    </button>
+    <div id="div_semangat"></div>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>contoh error pada JS</title>
+<script type="text/javascript">
+/*error akan keluar jika kita membuat suatu element seperti function teta[i terjadithypo dalam spasi maupun huruf besar kecilnya
+pada umumnya element "function" javascript itu semuanya menggunakan huruf kecil, kita akan eksperimen membuatnyathypo menjadi "functon"
+setelah itu kita save dan kita buka di browseer lalu pencet tombolnya*/
+functon tambah_semangat()
+/*langkah komen itu selesai mari kita tekan tombol "CTRL+SHIFT+I" secara bersamaan, setelah ada bagian pop up yang muncul di sebelah manapun
+ silahkan kita klik menu "console" pada bagian atas dan di sebelahnya elementuntuk melihat error dari jsnya*/
+{
+    var a=document.getElementById("div_semangat");
+    a.innerHTML+="<p> Sedang belajar Js Lung Semangat....!!</p>";
+}
+/*setelah itu kita pencet tombol "semangat...!!" atau tombol apapun yang di beri fungsi javascriptnya, setlah itu akan muncul peringatan warna merah di dalam console , nah itulah caramelihat error di javascript*/
+</script>
+</head>
+<body>
+<h1> Belajar Javascript</h1>
+<p>Saya sedang belajar java script</p>
+Klik tombol ini untuk menambahkan kalimat baru :
+<button id="tambah" onclick="tambah_semangat()">
+Semangat...!!!
+</button>
+<div id="div_semangat"></div>
+</body>
+</html>

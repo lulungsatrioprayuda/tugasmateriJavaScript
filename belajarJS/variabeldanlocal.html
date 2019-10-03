@@ -1,0 +1,25 @@
+<!--contoh efek konsep global variable dan local variable dalam JavaScript-->
+<!DOCTYPE html>
+<html >
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script>
+        var nilai= "global";
+        function test()
+        {
+            var nilai = "lokal";
+            var nilai_lokal = "jti.polije"
+            tanpa_var = "no_scope"; // akan menjadi global variabel kalo yang ini
+        }
+        test();// print: lokal gaktau maksunya
+        console.log(nilai);//print : global
+        console.log(tanpa_var);// print : no_scope (bisa di akses)
+        console.log(nilai_lokal);// error, karena nilai_lokal adalah lokal variable
+    </script>
+</head>
+<body>
+    <h1>belajar Java Sciprt melalui html</h1>
+    <p>Saya sedang belajar JavaScript di jti polije semangat ya lung..</p>
+</body>
+</html>
